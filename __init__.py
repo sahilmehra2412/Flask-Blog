@@ -6,8 +6,8 @@ import re
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'HelloWorld'
-client = MongoClient('mongodb://admin:abc123@ds249092.mlab.com:49092/blog')
-db = client['blog']
+client = MongoClient('mongodb://newuser:hello123@ds227865.mlab.com:27865/new_database')
+db = client['new_database']
 
 posts = db.posts
 month = {'1':'Jan','2':'Feb','3':'Mar','4':'Apr','5':'May','6':'Jun','7':'Jul','8':'Aug',
